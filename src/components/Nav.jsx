@@ -4,10 +4,13 @@ function Nav () {
     return (
         <div className="nav">
             <Link to='/'>
-                <div> Crypto Price </div>
+                <div> Home </div>
             </Link>
-            <Link to='/Stocks'>
-                <div> Stocks </div>
+            <Link to='/stock'>
+                <div> Dashboard </div>
+            </Link>
+            <Link to='/about'>
+                <div> About </div>
             </Link>
         </div>
     );
