@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import BrowserRouter and rename it to Router
+import { BrowserRouter as Router } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Wrap the app component with the router component to enable the router features 
+ReactDOM.render(
   <React.StrictMode>
+    <Router>
     <App />
-  </React.StrictMode>
+    </Router>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
