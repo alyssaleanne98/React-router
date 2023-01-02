@@ -1,11 +1,12 @@
 // import route and our components 
 import './App.css';
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
 import Stock from './pages/Stock';
 import Dashboard from './pages/Dashboard';
 import Nav from './components/Nav';
+
 
 function App() {
   // We will use the Route component to specify each route

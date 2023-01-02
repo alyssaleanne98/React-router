@@ -17,7 +17,7 @@ const Dashboard = (prop) => {
 
             return (
               <Link to={`/stock/${stock.symbol}`}>
-                <h1>{stock.name}</h1>
+                <h1>{name} ({symbol})</h1>
               </Link>
             )
           })
