@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
+// allows you to access the parameters of the current URL that is matched by the <Route path>
 import { useState, useEffect } from "react";
+//
 import React from "react";
 
 
@@ -15,10 +17,12 @@ function Stock () {
 
   const getStock = async () => {
     const response = await fetch (url)
+    // requests to fetch url 
     const data = await response.json()
+    // response.json() is a method on the response object that lets you extract a JSON object from the response. Retunrs a promise resolved to a JSON object
     setStock(data)
   }
-  useEffect(() =>{
+  useEffect(() => {
     getStock()
   }, [])
   
